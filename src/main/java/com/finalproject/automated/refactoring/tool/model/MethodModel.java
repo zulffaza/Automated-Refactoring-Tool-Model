@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,17 +20,18 @@ import java.util.List;
 @EqualsAndHashCode(exclude = {"body"})
 public class MethodModel {
 
-    private String modifiers;
-
-    private Boolean staticMethod;
+    @Builder.Default
+    private List<String> keywords = new ArrayList<>();
 
     private String returnType;
 
     private String name;
 
-    private List<PropertyModel> parameters;
+    @Builder.Default
+    private List<PropertyModel> parameters = new ArrayList<>();
 
-    private List<String> exceptions;
+    @Builder.Default
+    private List<String> exceptions = new ArrayList<>();
 
     private String body;
 
