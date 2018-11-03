@@ -3,6 +3,9 @@ package com.finalproject.automated.refactoring.tool.model;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author Faza Zulfika P P
  * @version 1.0.0
@@ -12,6 +15,9 @@ import lombok.Data;
 @Data
 @Builder
 public class PropertyModel {
+
+    @Builder.Default
+    private List<String> keywords = new ArrayList<>();
 
     private String type;
 
