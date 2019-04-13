@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
  */
 
 @Data
-@Builder
+@Builder(builderMethodName = "statementBuilder")
 @NoArgsConstructor
 @AllArgsConstructor
 public class StatementModel {
