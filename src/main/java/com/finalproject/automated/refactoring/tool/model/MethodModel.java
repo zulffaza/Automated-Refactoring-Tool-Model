@@ -36,4 +36,7 @@ public class MethodModel {
     private String body;
 
     private Long loc;
+
+    @Builder.Default
+    private List<CodeSmellName> codeSmells = new ArrayList<>();
 }
