@@ -16,7 +16,7 @@ import java.util.List;
  */
 
 @Data
-@Builder
+@Builder(builderMethodName = "blockBuilder")
 @EqualsAndHashCode(callSuper = false)
 @NoArgsConstructor
 @AllArgsConstructor
