@@ -35,6 +35,9 @@ public class MethodModel {
 
     private String body;
 
+    @Builder.Default
+    private List<StatementModel> statements = new ArrayList<>();
+
     private Long loc;
 
     @Builder.Default
