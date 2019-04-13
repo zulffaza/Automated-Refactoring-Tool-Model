@@ -1,7 +1,9 @@
 package com.finalproject.automated.refactoring.tool.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @author Faza Zulfika P P
@@ -11,6 +13,8 @@ import lombok.Data;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class StatementModel {
 
     private String statement;
