@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,7 @@ import java.util.List;
 @Data
 @Builder(builderMethodName = "blockBuilder")
 @EqualsAndHashCode(callSuper = false)
+@ToString(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
 public class BlockModel extends StatementModel {
