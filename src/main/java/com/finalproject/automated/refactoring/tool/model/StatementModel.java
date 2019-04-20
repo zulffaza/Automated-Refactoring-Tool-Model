@@ -18,4 +18,8 @@ import lombok.NoArgsConstructor;
 public class StatementModel {
 
     private String statement;
+
+    private Integer startIndex;
+
+    private Integer endIndex;
 }
