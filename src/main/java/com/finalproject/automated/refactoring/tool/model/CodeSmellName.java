@@ -12,7 +12,8 @@ import java.util.stream.Collectors;
 
 public enum CodeSmellName {
 
-    LONG_METHOD("Long Method");
+    LONG_METHOD("Long Method"),
+    LONG_PARAMETER_METHOD("Long Parameter Method");
 
     private String name;
 
