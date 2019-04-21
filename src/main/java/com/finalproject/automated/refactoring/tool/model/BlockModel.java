@@ -26,4 +26,6 @@ public class BlockModel extends StatementModel {
 
     @Builder.Default
     private List<StatementModel> statements = new ArrayList<>();
+
+    private StatementModel endOfBlockStatement;
 }
