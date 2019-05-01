@@ -31,6 +31,12 @@ public class MethodModel {
     private List<PropertyModel> parameters = new ArrayList<>();
 
     @Builder.Default
+    private List<String> globalVariables = new ArrayList<>();
+
+    @Builder.Default
+    private List<PropertyModel> localVariables = new ArrayList<>();
+
+    @Builder.Default
     private List<String> exceptions = new ArrayList<>();
 
     private String body;
