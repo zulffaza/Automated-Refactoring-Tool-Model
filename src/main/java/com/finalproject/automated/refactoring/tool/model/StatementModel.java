@@ -17,6 +17,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class StatementModel {
 
+    private Integer index;
+
     private String statement;
 
     private Integer startIndex;
